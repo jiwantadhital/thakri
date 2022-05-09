@@ -41,6 +41,7 @@ dependencies:
   flutter_html: ^2.2.1
   http: ^0.13.4
   url_launcher: ^6.0.20
+  zoom_widget: ^0.2.1
 
 dev_dependencies:
   flutter_test:

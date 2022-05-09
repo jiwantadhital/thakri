@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 import 'package:thadri/pages/apply/apply_page.dart';
+import 'package:thadri/pages/community_help/community_menu.dart';
+import 'package:thadri/pages/community_help/menu_details/family_expenses.dart';
 import 'package:thadri/pages/home_page.dart';
 import 'package:thadri/pages/recent/recent_details.dart';
 import 'package:thadri/pages/recent/recent_post.dart';
@@ -15,7 +17,15 @@ class RouteHelper{
   static const String blog="/blog";
   static const String termsPage="/terms-page";
   static const String aboutUs="/about-us";
-      static const String apply="/apply";
+  static const String apply="/apply";
+
+//community
+static const String communityMenu="/community-menu";
+static String getcommunityMenu()=>'$communityMenu';
+static const String familyExpenses="/family-expenses";
+static String getfamilyExpenses()=>'$familyExpenses';
+
+
 
 
   static String getSplashPage()=>'$splashPage';
@@ -24,7 +34,7 @@ class RouteHelper{
   static String getInitial()=>'$initial';
   static String getTermsPage()=>'$termsPage';
   static String getAboutUs()=>'$aboutUs';
-      static String getapply()=>'$apply';
+  static String getapply()=>'$apply';
 
 
   static List<GetPage> routes=[
@@ -64,6 +74,18 @@ class RouteHelper{
   
     GetPage(name: apply, page: (){
       return ApplyPage();
+    },
+    transition: Transition.fadeIn
+    ),
+
+    //community
+    GetPage(name: communityMenu, page: (){
+      return CommunityMenu();
+    },
+    transition: Transition.fadeIn
+    ),
+     GetPage(name: familyExpenses, page: (){
+      return FamilyExpenses();
     },
     transition: Transition.fadeIn
     ),

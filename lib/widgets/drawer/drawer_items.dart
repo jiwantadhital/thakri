@@ -51,9 +51,9 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                 ),
                 SizedBox(height: 10,),
                DrawerList(icon: Icons.self_improvement,iconColor: Colors.blue.shade900, text: "हाम्रा बारेमा",tap: (){Get.toNamed(RouteHelper.getAboutUs());},),
-                DrawerList(icon: Icons.group,text: "समुह विवरण ",iconColor: Colors.blue.shade900,tap: (){}),
+                DrawerList(icon: Icons.group,text: "समुह विवरण ",iconColor: Colors.blue.shade900,tap: (){Get.toNamed(RouteHelper.getcommunityMenu());}),
                DrawerList(icon: Icons.timer,text: "मासिक व्यवस्था ",iconColor: Colors.blue.shade900,tap: (){Get.toNamed(RouteHelper.getTermsPage());},),
-                  DrawerList(icon: Icons.social_distance, text: "सामाजिक सहयोग ",iconColor: Colors.blue.shade900,tap: (){Get.toNamed(RouteHelper.getTermsPage());},),
+                  DrawerList(icon: Icons.social_distance, text: "सामाजिक सहयोग ",iconColor: Colors.blue.shade900,tap: (){Get.toNamed(RouteHelper.getcommunityMenu());},),
                DrawerList(icon: Icons.download, text: "डाउनलोड  ",iconColor: Colors.blue.shade900,tap: (){Get.toNamed(RouteHelper.getTermsPage());},),
                DrawerList(icon: Icons.contact_page, text: "सम्पर्क",iconColor: Colors.blue.shade900,tap: (){Get.toNamed(RouteHelper.getapply());},),
 
